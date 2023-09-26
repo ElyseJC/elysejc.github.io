@@ -1,0 +1,110 @@
+/* text */
+.h1 {color: deeppink;
+
+}
+.p1 {
+  font-family: "lucida handwriting", cursive;
+}
+.p2 {
+  font-family: "Lucida Handwriting", cursive;
+}
+.p3 {
+  font-family: "Lucida Handwriting", cursive;
+}
+.h1 {
+  font-family: "Lucida Handwriting", cursive;
+}
+.h1 {text-align: center;}
+
+.p2 {text-align: center;}
+
+.p2 {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 80px;
+}
+.p3 {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 80px;
+}
+
+/* Cat Header */
+.object74638912 {
+    display: block;
+    left: 0%;
+    margin-left: 61px;
+    position: absolute;
+    top: 10px;
+    width: 305px;
+    height: 300px;
+    background-image: url(https://8k94dc.p3cdn1.secureserver.net/wp-content/themes/Rainbow2/images/object74638912.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 3;
+    border: none;
+    }
+.angelicpaws {
+	margin-top: 180px;
+	color: black;
+	position: relative;
+	}
+ /*header*/
+
+.section id=menu {
+    background: #294157 url(images/nav.png) scroll;
+    border-bottom: 1px dotted #B1A8CD;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 499;
+}
+/* header menu */
+ul {
+  list-style-type: none;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fdd6e5;
+  border: double;
+  border-width: thick;
+  border-color: darkgoldenrod;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #b0e0e6 ;
+}
+
+
+/* image alignment */
+
+ /*img {
+  max-width: 20%;
+  height: auto;
+}
+*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* background image */
+
+body {
+ background-image: url("https://www.alittlesparkofjoy.com/wp-content/uploads/2022/05/angel-signs-header.jpg");
+ background-color: #cccccc;
+}
+/*Rory Image*/
+
+
