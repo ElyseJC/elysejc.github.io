@@ -50,7 +50,14 @@ body {
 	text-align: justify; /*will span text all the way along website*/
 }
 
-
+img#overlay {
+	width: 100%;
+	opacity: 96%;
+	position: absolute;
+	top: 70px;
+	z-index: 5;
+	mix-blend-mode: multiply;
+}
 h1 {
 	color: #2a3827;
 	
@@ -73,13 +80,7 @@ a:hover {
 	transition: 1s;
 }
 
-img#overlay {
-	width: 100%;
-	opacity: 96%;
-	position: absolute;
-	top: 70px;
-	z-index: 5;
-}
+
 /*opacity drop*/
 img#overlay:hover {
 	opacity: 0.1;
@@ -92,13 +93,17 @@ img#elyse {
 	top: 50px;
 	right: 100px;
 	z-index: 4;
+	mix-blend-mode: darken;
 	
 }
-/*opacity drop*/
+
+
+
 img#overlay]:hover {
 	opacity: 0.1;
 	transition: 3s;
 }
+
 
 /*++adding styling to the jumbotron++*/
 #jumbotron {
