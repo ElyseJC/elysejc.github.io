@@ -50,14 +50,85 @@ body {
 	text-align: justify; /*will span text all the way along website*/
 }
 
+img#elyse2 {
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	z-index: 1;
+	mix-blend-mode: ;
+	
+}
+
+img#overlay2 {
+	width: 100%;
+	opacity: 100%;
+	position: absolute;
+	top: 70px;
+	z-index: 2;
+	mix-blend-mode: ;
+}
+img#cactus {
+	position: absolute;
+	top: 0px;
+	right: 100px;
+	z-index: 3;
+	opacity: 100%;
+	padding-top: 2;
+	max-width: 50%;
+	height: auto;
+	width: auto;
+}
+
+img#elyse {
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	z-index: 4;
+	mix-blend-mode: lighten;
+	
+}
+img#shadow {
+	position: absolute;
+	top: 0px;
+	left: 600px;
+	z-index: 6;
+	opacity: 75%;
+	padding-top: 2;
+	max-width: 50%;
+	height: auto;
+	width: auto;
+}
+img#sun {
+	position: absolute;
+	top: 0px;
+	right: 600px;
+	z-index: 6;
+	opacity: 75%;
+	padding-top: 2;
+	max-width: 50%;
+	height: auto;
+	width: auto;
+	mix-blend-mode: darken;
+}
 img#overlay {
 	width: 100%;
-	opacity: 96%;
+	opacity: 100%;
 	position: absolute;
 	top: 70px;
 	z-index: 5;
 	mix-blend-mode: multiply;
 }
+
+/*opacity drop*/
+img#overlay:hover {
+	opacity: 0.1;
+	transition: 3s;
+}
+
+
+
+
+
 h1 {
 	color: #2a3827;
 	
@@ -78,30 +149,6 @@ a:hover {
 	color: #E9E4BE;
 	/*++add delay to colour change++*/
 	transition: 1s;
-}
-
-
-/*opacity drop*/
-img#overlay:hover {
-	opacity: 0.1;
-	transition: 3s;
-}
-
-
-img#elyse {
-	position: absolute;
-	top: 50px;
-	right: 100px;
-	z-index: 4;
-	mix-blend-mode: darken;
-	
-}
-
-
-
-img#overlay]:hover {
-	opacity: 0.1;
-	transition: 3s;
 }
 
 
