@@ -1,0 +1,185 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+html,body {
+  min-height: 200%;
+  min-width: 145%;
+}
+/*clearfix*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++Global Styling+++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++*/
+
+body {
+  font-size: 2.5em;
+  text-align: justify;
+  background: url("https://techcrunch.com/wp-content/uploads/2023/07/tengyart-hR4JiEOZMS8-unsplash-e1688677999679.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: #2a3827;
+  z-index: 1;
+}
+  #clouds3 {
+  position: absolute;
+  max-width: 100%;
+  left: 2300px;
+  width: auto\9;
+  height: auto;
+  top: 0px;
+  z-index: 2;
+  opacity: 80%;
+  filter: grayscale(50%);
+}
+#clouds {
+  position: absolute;
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  top: -30px;
+  left: 0px;
+  right: 0px;
+  z-index: 3;
+  opacity: 80%;
+}
+#clouds2 {
+  position: absolute;
+  max-width: 100%;
+  left: 1300px;
+  width: auto\9;
+  height: auto;
+  top: 5px;
+  z-index: 4;
+  opacity: 80%;
+}
+
+#bottom {
+  position: absolute;
+  max-width: 100%;
+  width: auto\9;
+  bottom: -1000px;
+  z-index: 5;
+  opacity: 90%;
+  mix-blend-mode: multiply;
+}
+
+#overlay {
+  position: absolute;
+  max-width: 400%;
+  width: auto\9;
+  height: auto;
+  top: 5px;
+  z-index: 6;
+  opacity: 90%;
+  mix-blend-mode: multiply;
+}
+img#overlay:hover {
+  opacity: 0;
+  transition: 7s;
+
+}
+#nathalie {
+  position: absolute;
+  max-width: 200%;
+  width: auto\9;
+  height: auto;
+  top: 20px;
+  left: 942px;
+  z-index: 7;
+}
+#shadow {
+  position: absolute;
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  top: -40px;
+  left: 2670px;
+  z-index: 8;
+  scale: 100%;
+  opacity: 95%;
+}
+#ground {
+  position: absolute;
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  top: 50px;
+  right: 0px;
+  left: 0px;
+  z-index: 9;
+  opacity: 90%;
+
+}
+#newrock {
+  position: absolute;
+  max-width: 190%;
+  width: auto\9;
+  height: auto;
+  top: 20px;
+  left: 942px;
+  z-index: 10;
+}
+/*opacity drop*/
+img#newrock:hover {
+  opacity: 0;
+  transition: 4s;
+
+}
+#jord {
+  position: absolute;
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  top: -40px;
+  left: 942px;
+  z-index: 11;
+  scale: 150%;
+}
+#rocks {
+  position: absolute;
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  top: 50px;
+  right: 0px;
+  left: 0px;
+  z-index: 12;
+  opacity: 70%;
+  mix-blend-mode: darken;
+
+}
+#amanda {
+  position: absolute;
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  top: 50px;
+  left: 0px;
+  right: 0px;
+  z-index: 13;
+  filter: saturate(120%);
+}
+/*opacity drop*/
+img#amanda:hover {
+  opacity: 0;
+  transition: 7s;
+
+}
+
+
+
