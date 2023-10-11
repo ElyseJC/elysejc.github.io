@@ -9,6 +9,7 @@ html,body {
   min-height: 200%;
   min-width: 145%;
 }
+
 /*clearfix*/
 
 .clearfix:before,
@@ -24,6 +25,8 @@ html,body {
 /*++++++++++++++++++++Global Styling+++++++++++++++++++++++*/
 /*+++++++++++++++++++++++++++++++++++++++++++*/
 
+/*++++++++++++++++++Text/Link+++++++++++++++++++++++++*/
+
 body {
   font-size: 2.5em;
   text-align: justify;
@@ -35,6 +38,23 @@ h1 {
   color: #2a3827;
   z-index: 1;
 }
+h2 {
+  color: #2a3827;
+  z-index: 1;
+}
+a { 
+  color: #2a3827;
+  text-decoration: none; /*removes underline on link*/
+}
+
+a:hover {
+  color: #E9E4BE;
+  /*++add delay to colour change++*/
+  transition: 1s;
+}
+
+/*++++++++++++++++Images+++++++++++++++++++++++++++*/
+
   #clouds3 {
   position: absolute;
   max-width: 100%;
@@ -180,6 +200,7 @@ img#amanda:hover {
   transition: 7s;
 
 }
+
 
 
 
