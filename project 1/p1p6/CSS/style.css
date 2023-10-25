@@ -1,0 +1,449 @@
+/* This is the Style Sheet for our new 53 Website 
+
+H1 is GT Super Super @ 64
+
+H2 is GT Super Super @ 36
+
+H3 is Poppins Medium at 32
+
+H4 is Poppins Regular at 24
+
+H5 is Poppins Regular at 20
+
+
+Colors: ;
+
+Blue #153B84
+Orange #c2402f
+peachy #ffeae7
+gray #161616
+
+
+
+
+/* Let's create a clearly marked part of our CSS file to 
+put down all the high level and universally applied properties
+*/
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* linking type faces that are in the folder*/ 
+@font-face {
+    font-family: "GT-Super";
+    src: url("../GT-Super/GT-Super-Display-Super.woff2");
+}
+
+@font-face {
+	font-family: "GT-Medium";
+	src: url("../GT-Super/GT-Super-Display-Medium.woff2");
+}
+
+@font-face {
+	font-family: "GT-Light";
+	src: url("../GT-Super/GT-Super-Display-Regular.woff2");
+}
+
+img {
+	max-width: 100%;
+}
+/*clear fix*/
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* The most representative style of your type shold be established
+ first. Then you can change it with sp[ecificity later.
+*/
+
+
+body {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+
+h1 {
+	font-family: "GT-Super";
+	font-size: 60px;
+	color: black;
+	margin: 0;
+	/* we could also use font-size: 4rem; to get the same size. 
+	Ultimatley if we were building a site to be completely 
+	responsive then we would want to use a responsive friendly unit
+	*/
+}
+
+
+h2 {
+	font-family: "GT-Super";
+	font-size: 36px;
+	margin: 0;
+}
+
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+
+}
+/*this way you only have to style lists styles once */ 
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+}
+
+.tighten {
+	letter-spacing: -0.03em;
+}
+
+/* layout styling, */
+/*this is for prototyping, helps you if you are adjusting things, 
+you can visualize the boc model for elements */ 
+
+.blue {
+	background-color: lightblue;
+}
+
+.red {
+	background-color: lightpink;
+}
+
+.green {
+	background-color: green;
+}
+.yellow {
+	background-color: yellow;
+}
+
+.orange {
+	background-color: orangered;
+}
+
+.peachpuff {
+	background-color: peachpuff;
+}
+/*this is for prototyping */
+ /*this is empty so we can respond to bootstraps */
+.container {
+
+}
+
+.container-fluid {
+}
+
+/*float class can be applied to stuff if we want to quickly right 
+align it*/
+
+.right-align {
+	float: right;
+}
+
+/* Header Styling */ 
+
+
+
+header {
+	background-color: #fff;
+	padding-top: 10px;
+}
+
+
+a#logo2 {
+	
+	display: inline-block;
+	max-height: 40px;
+	max-width: 40px;
+	padding-top: 2px;
+}
+
+header nav {
+	margin-top: 10px;
+}
+
+.nav-link {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.nav-link a {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+
+	margin-right: 0;
+	margin-left: 10px;
+	padding: 10px 20px;
+}
+
+
+/* flexbox nav option that we will cover oct 25*/ 
+
+
+
+
+
+
+/* Hero/Bilboard Styling */ 
+
+
+#hero {
+	background-image: url("../images/hero1.jpg");
+	background-size: cover;
+	background-color: #fff;
+	/* this will auto adjust to whatever height the view port is at */
+	height: 85vh;
+}
+
+#hero-chunk {
+	width: 400px;
+	color: black;
+	margin-top: 200px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#hero h1 {
+	padding-bottom: 16px;
+}
+
+#hero h4 {
+	padding-bottom: 30px;
+}
+
+a.CTA {
+	background-color: #c2402f;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+}
+
+/* mobile first section of the style sheet 
+
+Some content comes fromt the Illuminating radioactivity website
+https://blog.tubikstudio.com/case-study-educational-interactive-website/
+*/
+
+.mobileFirst {
+
+}
+
+
+/*  responsive can be as easy as limiting line length
+.colA, .colB {
+	max-width: 400px;
+}
+*/
+
+/*giving cola flexbox */ 
+
+.colA {
+	display: flex;
+	justify-content: center; /*centering in the row*/
+	align-items: center; /*centering it vertically, good for centering a
+	label in a button*/
+
+	/* this makes it switch from vertical to horizontal upon different screen size*/	
+	height: 400px;
+	max-width: 390px;
+
+}
+.colB p {
+	padding: 10px;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+
+}
+
+
+.mobileFirst h1,p {
+
+}
+.colB  {
+/* this makes it swithc upon different screen size*/	
+	max-width: 390px;
+	height: 400px;
+}
+
+.colB span {
+	
+}
+.colC {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* this makes it switch from vertical to horizontal upon different screen size*/	
+	height: 400px;
+	max-width: 390px;
+}
+
+.colD {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	max-width: 390px;
+}
+.card {
+	width: 200px;
+	height: 400px;
+	padding: 10px;
+	align-items: bottom;
+	border-radius: 12px;
+	z-index: 1;
+}
+#image {
+	height: 400px;
+	max-width: 390px;
+	border-radius: 12px;
+	mix-blend-mode: ;
+}
+/* flex responsive goes next 
+
+*/
+
+/* xoxox making the green chicklet a square and adding padding to the text
+
+*/
+
+.chicklet {
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	/*makes corners curved*/
+	border-radius: 12px;
+
+}
+
+.chicklet p {
+	font-size: 10px;
+	font-weight: 600;
+	line-height: 1;
+	display: flex;
+	flex-direction: column; /*makes them not a row*/
+	justify-content: space-between; /*pushes the last thing in the row to the bottom
+	and basically evenly spaces things*/
+	
+
+	/* xoxox margin-bottom: 8px; /*xoxx pushes thing below this down. in this 
+	case you could use padding or mnargin since we have no background
+	colour 
+
+	we can also use flexbox xoxxo */
+}
+
+.chicklet h4 {
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 1;
+	padding-top: 5px;
+}
+
+.chicklet h6 {
+	font-size: 8px;
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+
+
+.empty {
+	height: 80vh;
+	background-color: peachpuff;
+}
+
+
+
+/* our media queries go next 
+
+We put this at the bottom because it matters which order 
+the browser reads the code
+
+at a specific screen size, it will adjust the elements
+
+This is telling the website to redesign based on the screen size
+
+
+*/
+
+@media screen and (###) {
+
+	.mobileFirst .row div {
+		float: left;
+		display: inline-block;
+	}
+
+}
+/*this will change the background colour of the logo
+whenh the window is smaller than x pixels*/
+
+@media screen and (max-width: 1200px) and (min-width: 392px) {
+	#logo2 {
+		background-color: blueviolet;
+	}
+
+}
+/* for the iphone 12 pro. the width of the pro is 390px, so we will make the max width 391
+Dont overlap widths (note how the one above is 392 and the one below is 391 so that they are not both commanded
+at 391*/ 
+@media screen and (max-width: 391px) {
+
+	#logo2 {
+		background-color: red;
+	}
+/* this makes the search (whate are you looking for) disapear at smaller screensizes*/ 
+
+	#search {
+		display: none;
+	}
+	
+}
+
+
+
+
+
+
