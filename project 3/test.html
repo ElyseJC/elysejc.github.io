@@ -1,0 +1,67 @@
+<div class="product-block product-block--description">
+   <div class="description content has-padding-top">
+      <!--Start tab labels-->
+      <ul class="tabs">
+         <li><a href="#tab1" class="active"><h5>DESCRIPTION</h5></a></li>
+         <li><a class="" href="#tab2"><h5>NOTES</h5></a></li>
+         <li><a class="" href="#tab3"><h5>INGREDIENTS</h5></a></li>
+      </ul>
+
+      <!--Start tab content-->
+      <ul class="tabs-content">
+         <li style="display: block;" id="tab1" class="active">
+            <h4>SMELLS LIKE...</h4>
+            <p>Airy breeze, neon green leaves. Cool shade on creamy blossoms. Citrus is like sunshine grown on a tree. Relax and let the sunshine in.</p>
+            <!-- Additional content for the "DESCRIPTION" tab -->
+            <h4>IN OTHER WORDS...</h4>
+            <p>Impromptu plans when your plans fall through, sunbeams shining through your window. Your oldest friends marvel at how you have grown and changed. Remembering that your clock is fast. Feeling the seasons changing. A bird eating out of your hand. Luck is everywhere you want to find it.&nbsp;</p>
+         </li>
+         <li id="tab2" class="" style="display: none;">
+            <!-- Content for the "NOTES" tab -->
+            <div class="tab-columns">
+               <img alt="" src="https://cdn.shopify.com/s/files/1/0518/6125/8395/files/animation-disksgif-solo.gif?v=1687436973">
+               <div class="tab-notes" style="height: 380px;">
+                  <h3>PETIGRAIN, CITRUS, JASMINE</h3>
+                  <h3> ORANGE BLOSSOM, DEWY LEAVES, THYME</h3>
+                  <h3> VETIVER, MUSK</h3>
+               </div>
+            </div>
+         </li>
+         <li id="tab3" class="" style="display: none;">
+            <!-- Content for the "INGREDIENTS" tab -->
+            <div>
+               <p>Alcohol (alcool), Parfum, Water (eau), Geraniol, Hydroxycitronellal, Citral, Isoeugenol, Citronellal, Farnesol,Benzyl alcohol
+                  <br><br>All of our scents are vegan and cruelty free. We use a blend of natural and synthetic materials in our scents, especially where the natural equivalent faces sustainability or safety concerns.
+               </p>
+            </div>
+         </li>
+      </ul>
+
+      <script>
+         (function() {
+            const scriptTag = document.scripts[document.scripts.length - 1];
+            const parentTag = scriptTag.parentNode;
+            parentTag.style.display = '';
+         })();
+         
+         const tabs = document.querySelectorAll('.tabs a');
+         tabs.forEach(tab => {
+            tab.addEventListener('click', function(event) {
+               event.preventDefault();
+               const tabId = this.getAttribute('href').substring(1);
+               showTab(tabId);
+            });
+         });
+
+         function showTab(tabId) {
+            const allTabs = document.querySelectorAll('.tabs-content li');
+            allTabs.forEach(tab => {
+               tab.style.display = 'none';
+            });
+
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.style.display = 'block';
+         }
+      </script>
+   </div>
+</div>
