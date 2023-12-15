@@ -3,21 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- nav icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Font-->
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
 
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="grid.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <style>
 
-    </style>
     <title>August Wind - Lōtos Fragrances and Incense</title>
 </head>
 
@@ -26,26 +27,26 @@
 <!--//////////////////////////////////////////////////NAV SECTION//////////////////////////////////////////////////-->
 
     <header class="container-fluid"> 
-        <div class="" id="navmenu">
-            <div class="row">
+        <div class="navmenu">
+            <div class="">
                 <div id="headerbanner">
                     <h6>Get 10% off your first order. <a>Learn more. </a></h6>
                 </div> 
             </div>
-            <div class="row" id="mainmenu">
+            <!--///////////////////// ///////////  //////////////////FROM W3 SCHOOLS///////// ////////////// /////////////// ////////////-->
 
-                <!--/*/*/*/*/*/*/I WANT THIS TO BE HAMBURGER ON SMALL SCREENS /*/**//*/*/*/*/*/*/*/-->
-                <!--/*/*/*/*/*/*/*//*//*/ ADD A LINE UNDER A PAGE THE USER IS ON /*/**//*/*/*/*/*/*/*/-->
+                <div class="topnav" id="myTopnav">
+                    <a href="#news"></a>
+                    <a href="#news"></a>
+                    <a href="#news"></a>
+                    <a href="#news"></a>
+                    <a href="p4index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="product.html" class="active">Products</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+                </div>
 
-                <nav class="col-md-7 offset-md-1">
-                    <ul>
-                        <li><a href="#"><p1>Home</p1></a></li>
-                        <li><a href="about.html"><p1>About</p1></a></li>
-                        <li><a href="product.html"><p1>Products</p1></a></li>
-                    </ul>
-                </nav>
-                <p1>Lōtos</p1> <!--/*/*/*/*/*/*/*//*//*/ I WANT THIS TO BE CENTRED /*/**//*/*/*/*/*/*/*/-->
-            </div>
         </div>
     </header>
 
@@ -67,27 +68,78 @@
     <section id="augustwind" class="container-fluid">
         <div class="augchunk">
             <!--///////////// LEFT /////////////-->
-            <div class="square">
+            <div class="square" id="augsuqarecarosel">
             <!--///////////// CAROSEL /////////////-->
-                <img src="images/ProductCarosel.png">
+                <div class="container mt-5">
+
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <!--********Carosel Images******-->
+                            <div class="carousel-item active">
+                                <img src="images/augustwind.png" class="d-block w-100" alt="Preview 1">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/augustwindhero.jpeg" class="d-block w-100" alt="Preview 2">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/bottle1.png" class="d-block w-100" alt="Preview 3">
+                            </div>
+                        </div>
+
+                        <!--********Carosel Buttons******-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
+                        <!--********Preview Images******-->
+                        <div class="row mt-3" id="carpreview">
+                            <div class="lil">
+                                <img src="images/augustwind.png" class="img-fluid" data-bs-target="#carouselExample"
+                                    data-bs-slide-to="0" alt="Preview 1">
+                            </div>
+                            <div class="lil">
+                                <img src="images/augustwindhero.jpeg" class="img-fluid" data-bs-target="#carouselExample"
+                                    data-bs-slide-to="1" alt="Preview 2">
+                            </div>
+                            <div class="lil">
+                                <img src="images/bottle1.png" class="img-fluid" data-bs-target="#carouselExample"
+                                    data-bs-slide-to="2" alt="Preview 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        
 
 
             <!--///////////// RIGHT /////////////-->
             <div class="square" id="augsuqare">
             <!--///////////// PROD TITLE /////////////-->
-                <div class="augtext">
+                <div class="augtext" id="augtop">
                     <h2 style="font-size: 30px;"><b>AUGUST WIND</b>/ WARM SWEET GRASS </h2>
-                    <p1>Eau de Parfum</p1><br>
-                    <p1>$197.00 CAD</p1>
+                    <p2>Eau de Parfum</p2><br>
+                    <p2><i>$197.00 CAD</i></p2>
                     <!--///////////// BUTTON /////////////-->
                     <a class="cta-button-aug" id="augustbutt" href="products.html"><p1 style="color: #F5F1E5;">View Stocklist</p1></a>
                 </div>
 
                 <!--///////////// PROD DESCRIPTION /////////////-->
+
+
                 <div class="augtext">
+
                     <div class="product-description">
-                        <!--///////////// TAB DESCRIPTION SECTION ADAPTED FROM W3 SCHOOLS TAB NAVIGATION /////////////-->
+                        <!--///////////// TAB DESCRIPTION SECTION ADAPTED FROM W3 SCHOOLS TAB NAVIGATION https://www.w3schools.com/howto/howto_js_tabs.asp/////////////-->
 
                         <!--///////////// TAB TITLES /////////////-->
                         <ul class="tabs">
@@ -127,34 +179,10 @@
                         <!--///////////// DIVIDER LINE /////////////-->
                         <div style="width: 100%; height: 100%; border: 1px #353B31 solid"></div>
                         
-                        <!--///////////// TAB DESCRIPTION JAVASCRIPT /////////////-->
+                        <!--///////////// TAB DESCRIPTION JAVASCRIPT FROM 13 SCHOOLS https://www.w3schools.com/howto/howto_js_tabs.asp/////////////-->
 
-                      <script>
-                         (function() {
-                            const scriptTag = document.scripts[document.scripts.length - 1];
-                            const parentTag = scriptTag.parentNode;
-                            parentTag.style.display = '';
-                         })();
-                         
-                         const tabs = document.querySelectorAll('.tabs a');
-                         tabs.forEach(tab => {
-                            tab.addEventListener('click', function(event) {
-                               event.preventDefault();
-                               const tabId = this.getAttribute('href').substring(1);
-                               showTab(tabId);
-                            });
-                         });
 
-                         function showTab(tabId) {
-                            const allTabs = document.querySelectorAll('.tabs-content li');
-                            allTabs.forEach(tab => {
-                               tab.style.display = 'none';
-                            });
-
-                            const selectedTab = document.getElementById(tabId);
-                            selectedTab.style.display = 'block';
-                         }
-                      </script>
+                         <!--/////////////  IS THIS THE CORRECT SPOT FOR THIS??  /////////////-->
 
                     </div> <!-- CLOSING TAG FOR PRODUCT DESCRIPTION -->
 
@@ -162,7 +190,7 @@
                     <div class="email">
                         <div class="email-text"> 
                             <p1>SIGN UP FOR 10% OFF</p1>
-                            <h6 style="font-style: italic; color:#353B31;">Enter your email and check your inbox for a coupon code</h6>
+                            <h6>Enter your email and check your inbox for a coupon code</h6>
                         </div>
 
                         <!--///////////// BOOTSTRAPS EMAIL FORM /////////////-->
@@ -185,10 +213,11 @@
 
 
 <!--//////////////////////////////////////////////////QUOTE SECTION//////////////////////////////////////////////////-->
+
     <section id="quote" class="container-fluid">
 
         <div id="quoteback">
-            <h2 style="font-size: 2vw">“Nothing like I have ever smelled before. A love letter to summers past—dewy skin, amber leaves, aching hearts.”</h2>
+            <h2>“Nothing like I have ever smelled before. A love letter to summers past—dewy skin, amber leaves, aching hearts.”</h2>
             <h5>@soandso</h5>
         </div>
 
@@ -202,18 +231,22 @@
                 <div class="square"> <!--///////////// FLOWER IMAGE/////////////-->
                     <img src="images/flower.png">
                 </div>
-                <div class="square"> <!--///////////// AROMA TEXT /////////////-->
+                <div class="square" id="warmearth"> <!--///////////// AROMA TEXT /////////////-->
                     <div class="aromatext">
                         <p5>Aromatic Profile</p5>
                         <h2>WARM AND EARTHY</h2>
-                        <div style="width: 100%; height: 100%; border: 1px #353B31 solid"></div>
+
+                        <div style="width: 100%; height: 100%; margin-top: 10px; margin-bottom: 10px; border: 1px #353B31 solid"></div>
+
                         <h6>Apply as desired to freshly moisturized wrists and neck. The profile will evolve throughout the day and with the composition of your skin—creating a fragrance that is one of a kind. To layer, pair with Tender Boreal for a unique and custom scent.</h6>
                         <p5>TOP NOTES</p5>
                         <h6>Freshly cut grass, rosemary, thyme</h6>
-                        <div style="width: 100%; height: 100%; border: 1px #353B31 solid"></div>
+
+                        <div style="width: 100%; height: 100%; margin-top: 10px; margin-bottom: 10px; border: 1px #353B31 solid"></div>
+
                         <p5>MIDDLE NOTES</p5>
                         <h6>Sandalwood, amber, jasmine</h6>
-                        <div style="width: 100%; height: 100%; border: 1px #353B31 solid"></div>
+                        <div style="width: 100%; height: 100%; margin-top: 10px; margin-bottom: 10px; border: 1px #353B31 solid"></div>
                         <p5>BASE NOTES</p5>
                         <h6>Vanilla, vetiver, oud</h6>
                     </div>
@@ -221,8 +254,10 @@
         </div>
 
         <div class="aromachunk"> <!--/////////////  BOTTOM CHUNK /////////////-->
-            <div class="square"> <!--///////////// HOVER IMAGE  /////////////-->
-                <img src="images/hover.png">
+            <div class="square" id="orangesquare"> <!--///////////// HOVER IMAGE  /////////////-->
+                <a href="#"><p1>Congratulations, you’ve unlocked a sample of our Oud and Amber Incense! </p1></a>
+                <img id="orange" src="images/hover.png">
+
             </div>
             <div class="square"> <!--///////////// SKIN IMAGE /////////////-->
                 <img src="images/skin.png">
@@ -341,7 +376,6 @@
             <div class="instagram">
                 <img src="images/flowerinstagram.png">
             </div>
-
             <div class="instagram">
                 <img src="images/bottleinstagram.png">
             </div>
@@ -415,11 +449,66 @@
                     </div>
                 </div>
             </div>
-            <div>
-               <h6 id="bottomtag"> Lōt0s / Edmonton, AB </h6>
-            </div>
-        </div>
+   
     </footer>
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+
+ <script>
+
+
+/* Nav Menu 
+Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    (function() {
+        const scriptTag = document.scripts[document.scripts.length - 1];
+        const parentTag = scriptTag.parentNode;
+        parentTag.style.display = '';
+    })();
+
+    // Select all the anchor elements inside elements with the class 'tabs'.
+    const tabs = document.querySelectorAll('.tabs a');
+
+    // Attach a click event listener to each tab.
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevents the default behavior of the anchor element.
+            const tabId = this.getAttribute('href').substring(1); 
+            showTab(tabId); // Calls the showTab function with the target tab ID.
+        });
+    });
+
+    // Function to show a specific tab based on its ID.
+    function showTab(tabId) {
+        // Select all the tab content items.
+        const allTabs = document.querySelectorAll('.tabs-content li');
+
+        // Hide all tab content items.
+        allTabs.forEach(tab => {
+            tab.style.display = 'none';
+        });
+
+        // Show the selected tab content item.
+        const selectedTab = document.getElementById(tabId);
+        selectedTab.style.display = 'block';
+    }
+
+    // Carousel Initialization
+    const carousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
+        interval: 6000, // interval for automatic sliding (in milliseconds)
+        wrap: true, // Allow cycling from the last to the first item 
+    });
+</script>
 
 
 </body>
