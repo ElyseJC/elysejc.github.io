@@ -373,7 +373,7 @@ p5 {
 }
 
 #hero {
-  background-image: url(images/hero.png);
+  background-image: url('../images/hero.png');
   height: 1150px;
 }
 
@@ -403,7 +403,7 @@ p5 {
 
 /************************************DISCOVER***************************/
 #discover {
-  background-image: url(images/discoverbackground.png);
+  background-image: url('../images/discoverbackground.png');
   background-repeat: no-repeat;
 }
 
@@ -561,7 +561,7 @@ p5 {
 
 
 .about-hero-image {
-  background-image: url('images/abouthero.png');
+  background-image: url('../images/abouthero.png');
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -648,7 +648,7 @@ p5 {
 /************************************HERO***************************/
 
 #producthero {
-  background-image: url('images/producthero.png');
+  background-image: url('../images/producthero.png');
   height: 25%;
   background-position: center;
   background-repeat: no-repeat;
@@ -714,7 +714,7 @@ p5 {
 /************************************HERO***************************/
 
 #aughero {
-  background-image: url('images/augwindhero.png');
+  background-image: url('../images/augwindhero.png');
   height: 25%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1150,7 +1150,7 @@ header {
 
 
 footer {
-  background-image: url('images/footer.png'); 
+  background-image: url('../images/footer.png'); 
   background-size: cover;
   background-position: center;
   color: white;
@@ -1589,7 +1589,7 @@ button {
 
   footer {
 
-    background-image: url('images/mobilefooter.png'); /* WHY ISNT THIS WORKING */
+    background-image: url('../images/mobilefooter.png'); /* WHY ISNT THIS WORKING */
     height: 2500px;
   }
 
