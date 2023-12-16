@@ -158,7 +158,7 @@ h5 {
 h6 {
   font-family: 'Playfair Display';
   font-size: 15px; 
-  font-style: medium;
+  font-weight: medium;
   color: #353B31;
 }
 
@@ -225,7 +225,7 @@ p5 {
 .title {
   height: 180px;
   max-height: 13vw;
-  width: 100;
+  width: 100%;
   background-color: #AE8241;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -305,7 +305,7 @@ p5 {
   width: 283px;
   height: 441px;
   position: relative; 
-  background: #E7DDC6;
+  background-color: #E7DDC6;
 }
 
 .innerbox {
@@ -349,7 +349,7 @@ p5 {
   color: #42462E;
 }
 
-.cardtext a h3:hover {
+.cardtext h3 a:hover {
   color: #F1444C;
 }
 
@@ -460,7 +460,7 @@ p5 {
 }
 
 #about h4 {
-  font-size: 8vw;
+  font-size: 8rem;
   color: #F5F1E5;
   text-align: center;
 }
@@ -674,7 +674,7 @@ p5 {
 
 #productcards {
   margin: auto;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -1505,6 +1505,13 @@ button {
   
   }
 
+  .tabs p1 {
+
+    display: flex;
+    font-size: 15px;
+
+  }
+ 
   .aromachunk div {
 
     width: 100%; 
@@ -1570,10 +1577,13 @@ button {
 
 /**************************************************** HEADER ********************************************************************/
 
+  
   .navmenu {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    color: black;
+    max-width: 100%;
   }
 
 
@@ -1591,6 +1601,7 @@ button {
 
     background-image: url('../images/mobilefooter.png'); /* WHY ISNT THIS WORKING */
     height: 2500px;
+    max-width: 100%;
   }
 
 
@@ -1600,6 +1611,7 @@ button {
     flex-direction: column;
     padding-top: 150px;
     text-align: left;
+    max-width: 100%;
 
   }
 
@@ -1624,7 +1636,7 @@ button {
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -1633,7 +1645,7 @@ button {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
